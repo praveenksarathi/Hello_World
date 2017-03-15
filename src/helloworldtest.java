@@ -1,4 +1,5 @@
-public class HelloWorldTest extends junit.framework.TestCase {
+import junit.framework.*;
+public class helloworldtest extends junit.framework.TestCase {
 
     public void testNothing() {
     }
