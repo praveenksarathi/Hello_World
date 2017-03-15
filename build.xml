@@ -38,15 +38,6 @@
     
      <path id="application" location="${jar.dir}/${ant.project.name}.jar"/>
 
-    <target name="run" depends="jar">
-        <java fork="true" classname="${main-class}">
-            <classpath>
-                <path refid="classpath"/>
-                <path refid="application"/>
-            </classpath>
-        </java>
-    </target>
-    
     <target name="junit" depends="jar">
         <junit printsummary="yes">
             <classpath>
